@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/student-management.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+</body>
+<div class="studentSystem">
+    <div class="head">
+        <div class="hr_head_left"></div>
+        <h2 class="head_title">学生信息管理系统</h2>
+        <div class="hr_head_right"></div>
+    </div>
+    <br />
+    <div class="queryInfo">
+        <label><b>学号：</b></label><input placeholder="请输入学号进行查询" name="query_id" class="query_id" type="text">
+        <button type="button" class="query">查询</button>
+    </div>
+    <br />
+    <br />
+    <table class="studentTable">
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>序号</td>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>学院</td>
+            <td>专业</td>
+            <td>年级</td>
+            <td>班级</td>
+            <td>年龄</td>
+            <td>操作</td>
+        </tr>
+    </table>
+    <br />
+    <button type="button" class="addStudent">新增</button>
+    <button type="button" class="delStudent">删除</button>
+    <div class="bottomBox">
+        <label class="newPage">第1页，共27页（每页十条）</label>
+        <button type="button" class="prePage">上一页</button>
+        <button type="button" class="nextPage">下一页</button>
+    </div>
+
+    <!--        增加-->
+    <div class="addStudentBox" style="display: none">
+        <span class="addStudentBoxTitle">新增学生信息</span>
+        <div class="inputInfo">
+            <label>学号</label><input placeholder="请输入5位数字" name="id" class="id" type="text"><i></i><br>
+            <label>姓名</label><input placeholder="中文或字母作为名字" name="name" type="text"><br>
+            <label>学院</label><input placeholder="例如：计算机学院" name="department" type="text"><br>
+            <label>专业</label><input placeholder="例如：软件测试与维护" name="major" type="text"><br>
+            <label>年级</label><input placeholder="年的四位格式：如2019" name="grade" type="text"><br>
+            <label>班级</label><input placeholder="两位以下数字：如12" name="classes" type="text"><br>
+            <label>年龄</label><input placeholder="两位以下数字：如20" name="age" type="text"><br>
+        </div>
+        <hr style="margin-bottom: 15px">
+        <div class="addStudentBoxFooter">
+            <button type="button" class="addStudentBoxYes">确定</button>
+            <button type="button" class="addStudentBoxNo">取消</button>
+        </div>
+    </div>
+    <!--        查看学生-->
+    <div class="checkStudentBox" style="display: none">
+        <span class="checkStudentBoxTitle">查看学生</span>
+        <div class="checkInputInfo">
+            <label>学号</label><input disabled type="text"><br>
+            <label>姓名</label><input disabled type="text"><br>
+            <label>学院</label><input disabled type="text"><br>
+            <label>专业</label><input disabled type="text"><br>
+            <label>年级</label><input disabled type="text"><br>
+            <label>班级</label><input disabled type="text"><br>
+            <label>年龄</label><input disabled type="text"><br>
+        </div>
+        <hr style="margin-bottom: 15px">
+        <div class="checkStudentBoxFooter">
+            <button type="button" class="checkStudentBoxYes">确定</button>
+        </div>
+    </div>
+
+    <!--        修改学生-->
+    <div class="changeStudentBox" style="display: none">
+        <span class="changeStudentBoxTitle">修改学生信息</span>
+        <div class="changeInputInfo">
+            <label>学号</label><input readonly="true" class="checkId" type="text" name="id"><i></i><br>
+            <label>姓名</label><input type="text" name="name"><br>
+            <label>学院</label><input type="text" name="department"><br>
+            <label>专业</label><input type="text" name="major"><br>
+            <label>年级</label><input type="text" name="grade"><br>
+            <label>班级</label><input type="text" name="classes"><br>
+            <label>年龄</label><input type="text" name="age"><br>
+        </div>
+        <hr style="margin-bottom: 15px">
+        <div class="changeStudentBoxFooter">
+            <button type="button" class="changeStudentBoxYes">确定</button>
+            <button type="button" class="changeStudentBoxNo">取消</button>
+        </div>
+    </div>
+</div>
+
+</html>

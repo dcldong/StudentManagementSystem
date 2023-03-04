@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(240, 236, 233);
+}
+
+.studentSystem {
+    width: 1500px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: rgb(240, 236, 233);
+}
+
+.hr_head_left {
+    height: 4px;
+    width: 10%;
+    background-color: rgba(127, 31, 217, 0.45);
+    border-radius: 10px;
+    margin-top: 46px;
+    margin-left: 10px;
+    float: left;
+}
+
+.hr_head_right {
+    height: 4px;
+    width: 70%;
+    background-color: rgba(127, 31, 217, 0.45);
+    ;
+    border-radius: 10px;
+    margin-top: 46px;
+    margin-right: 10px;
+    float: right;
+}
+
+.head_title {
+    margin-left: 45px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+button {
+    margin-left: 10px;
+    width: 80px;
+    height: 30px;
+    color: rgb(241, 255, 255);
+}
+
+.addStudent {
+    background-color: rgba(127, 31, 217, 0.45);
+}
+
+.queryInfo {
+    position: absolute;
+    left: 30%;
+    /* background-color: transparent; */
+}
+
+.query {
+    background-color: rgba(127, 31, 217, 0.45);
+    color: #FFFFFF
+}
+
+.delStudent {
+    background-color: rgba(127, 31, 217, 0.45);
+}
+
+.studentTable {
+    width: 1480px;
+    height: auto;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+a {
+    color: red;
+    padding-left: 2px;
+}
+
+.bottomBox {
+    position: absolute;
+    top: 850px;
+    margin-left: 10px;
+}
+
+.prePage {
+    margin-left: 1050px;
+    background: rgba(127, 31, 217, 0.45);
+}
+
+.nextPage {
+    background-color: rgba(127, 31, 217, 0.45);
+}
+
+.odd,
+.even {
+    height: 55px;
+}
+
+.studentTable .odd {
+    background-color: rgb(255, 255, 255);
+}
+
+.studentTable .even {
+    background-color: rgb(238, 241, 248);
+}
+
+.addStudentBox {
+    width: 580px;
+    height: 605px;
+    border: 1px solid black;
+    position: absolute;
+    top: 103px;
+    left: 508px;
+    background-color: white;
+}
+
+.addStudentBox .addStudentBoxTitle {
+    display: inline-block;
+    width: 555px;
+    height: 47px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    line-height: 48px;
+    padding-left: 10px;
+}
+
+.addStudentBox .inputInfo {
+    width: 345px;
+    padding-left: 135px;
+    padding-right: 100px;
+    font-size: 20px;
+    height: 490px;
+}
+
+.addStudentBox .inputInfo input {
+    width: 250px;
+    height: 30px;
+    margin-top: 33px;
+    margin-left: 25px;
+}
+
+.addStudentBoxYes {
+    background-color: rgba(127, 31, 217, 0.45);
+}
+
+.addStudentBoxNo {
+    background: rgba(127, 31, 217, 0.45);
+}
+
+.addStudentBoxFooter {
+    margin-left: 355px;
+}
+
+/*查看学生*/
+.checkStudentBox {
+    width: 580px;
+    height: 605px;
+    border: 1px solid black;
+    position: absolute;
+    top: 103px;
+    left: 508px;
+    background-color: white;
+}
+
+.checkStudentBox .checkStudentBoxTitle {
+    display: inline-block;
+    width: 555px;
+    height: 47px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    line-height: 48px;
+    padding-left: 10px;
+}
+
+.checkStudentBox .checkInputInfo {
+    width: 345px;
+    padding-left: 135px;
+    padding-right: 100px;
+    font-size: 20px;
+    height: 490px;
+}
+
+.checkStudentBox .checkInputInfo input {
+    width: 250px;
+    height: 30px;
+    margin-top: 33px;
+    margin-left: 25px;
+}
+
+.checkStudentBoxYes {
+    background-color: rgba(127, 31, 217, 0.45);
+}
+
+.checkStudentBoxNo {
+    background: rgba(127, 31, 217, 0.45);
+}
+
+.checkStudentBoxFooter {
+    margin-left: 355px;
+}
+
+span {
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+/*修改学生*/
+.changeStudentBox {
+    width: 580px;
+    height: 605px;
+    border: 1px solid black;
+    position: absolute;
+    top: 103px;
+    left: 508px;
+    background-color: white;
+}
+
+.changeStudentBox .changeStudentBoxTitle {
+    display: inline-block;
+    width: 555px;
+    height: 47px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    line-height: 48px;
+    padding-left: 10px;
+}
+
+.changeStudentBox .changeInputInfo {
+    width: 345px;
+    padding-left: 135px;
+    padding-right: 100px;
+    font-size: 20px;
+    height: 490px;
+}
+
+.changeStudentBox .changeInputInfo input {
+    width: 250px;
+    height: 30px;
+    margin-top: 33px;
+    margin-left: 25px;
+}
+
+.changeStudentBoxYes {
+    background-color: rgba(127, 31, 217, 0.45);
+}
+
+.changeStudentBoxNo {
+    background: rgba(127, 31, 217, 0.45);
+}
+
+.changeStudentBoxFooter {
+    margin-left: 355px;
+}
+
+.even:hover {
+    background-color: pink;
+}
+
+.odd:hover {
+    background-color: pink;
+}
